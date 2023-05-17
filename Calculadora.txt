@@ -42,4 +42,7 @@ public class Calculadora{
 		public void potencia(){
 			return num1*num1;
 		}		
+		public void resta(){
+		return num2-num1;
+		}
 	}
