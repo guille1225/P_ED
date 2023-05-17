@@ -8,17 +8,38 @@ public class Calculadora{
 			num1 = a;
 			num2 = b;
 		}
+
 	    public int multiplica (){
 	    	int resul = num1 * num2;
 	        return resul;
 	    }
+
 	    public int divide () {
 	        int resul = num1 / num2;
 	        return resul;
 	    }
+
 	    public int suma () {
 	    	 int resul = num1 + num2;
 	         return resul;
 	    } 
-
+		public int factorial() {
+	    		int factorial = 1;
+	    		if(num1 < 0)
+	    			return -1;
+	    		else if(num1 == 0)
+	    		return 0;
+	    		if(num1>15)
+	    			return -1;
+	    		else {
+	    			while (num1>0) {
+	    				factorial=factorial*num1; 
+	    				num1--;
+	    		}
+	    	}
+	    	return factorial;
+	    }
+		public void potencia(){
+			return num1*num1;
+		}		
 	}
